@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_webservice_test/pages/characters/character_details_page.dart';
 import 'package:flutter_webservice_test/pages/characters/character_list_page.dart';
 
 void main() {
@@ -14,6 +15,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: CharacterListPage(),
+      routes: {
+        "detail" : (context) => CharacterDetailsPage()
+      },
     );
   }
 }

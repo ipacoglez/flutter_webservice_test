@@ -51,15 +51,17 @@ class CardCharacter extends StatelessWidget {
                 height: 200.0,
                 width: 700,
                 fit: BoxFit.cover
+            ),
           ),
-        ),
-      )
+        )
       )
     );
 
   return GestureDetector(
     child: card,
-    onTap: (){},
+      onTap: (){
+        Navigator.pushNamed(context, "detail", arguments: data);
+      },
     );
   }
 }
